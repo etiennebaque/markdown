@@ -46,7 +46,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+For now, we'll use the following command (from project root):
+* `scp -r dist/* user@server:/path/to/target/folder`
 
 ## Further Reading / Useful Links
 
