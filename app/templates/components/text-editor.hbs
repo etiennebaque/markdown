@@ -1,8 +1,23 @@
-<div class='flex'>
-  <textarea class='flex-1 m-4 h-screen'>
-    This is an example
-  </textarea>
+<nav class="bg-grey-light p-3">
+  <div class="flex">
+    <div class="flex-1">
+      <label>
+        {{input type="checkbox" checked=formValues.liveChange}} Live change
+      </label>
+    </div>
+
+    <div class="flex-1">
+      <button class="text-md px-4 py-2 rounded-lg bg-blue text-white hover:bg-blue-darker mt-4 lg:mt-0">Save</button>
+    </div>
+  </div>
+</nav>
+
+<div class="flex">
+  {{textarea class="flex-1 m-4 h-screen" value=writtenText}}
 
   <div class="flex-1 bg-grey-lighter h-screen">
+    <div class="m-4">
+      {{preview}}
+    </div>
   </div>
 </div>
