@@ -4,7 +4,7 @@ import { computed } from '@ember/object';
 export default Component.extend({
   formValues: {},
   writtenText: 'This is an example',
-  updatedText: 'This is an example',
+  updatedText: '',
 
   preview: computed('writtenText', 'updatedText', function() {
     if (this.get('formValues.liveChange')) {
